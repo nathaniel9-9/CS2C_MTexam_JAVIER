@@ -1,0 +1,7 @@
+const subjectTitle = prompt("Enter the subject title:");
+const classSchedule = prompt("Enter the class schedule (Time, Days):");
+const classroom = prompt("Enter the classroom:");
+const classInstructor = prompt("Enter the class instructor:");
+const studentName = prompt("Enter the student name:");
+
+console.log(`${studentName} is currently enrolled in ${subjectTitle} with a class schedule of ${classSchedule} at room ${classroom}. The instructor for the subject is ${classInstructor}`);

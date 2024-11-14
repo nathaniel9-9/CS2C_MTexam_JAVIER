@@ -1,0 +1,55 @@
+const DSA = [];
+const PL = [];
+const Networks = [];
+
+function displayMenu() {
+  console.log("Select a subject:");
+  console.log("A. DSA");
+  console.log("B. PL");
+  console.log("C. Networks");
+  console.log("D. Exit");
+}
+
+function enrollStudent(subject) {
+  const studentName = prompt("Enter the student's name:");
+  subject.push(studentName);
+  console.log(`${studentName} has been enrolled in ${subject.name}.`);
+}
+
+function unenrollStudent(subject) {
+  console.log("Currently enrolled students in " + subject.name + ":");
+  for (let i = 0; i < subject.length; i++) {
+    console.log((i + 1) + ". " + subject[i]);
+  }
+
+  const studentIndex = prompt("Enter the index of the student to unenroll:");
+  const studentName = subject.splice(studentIndex - 1, 1)[0];
+  console.log(`${studentName} has been unenrolled from ${subject.name}.`);
+}
+
+while (true) {
+  displayMenu();
+  const choice = prompt("Enter your choice:");
+
+  switch (choice) {
+    case "A":
+      enrollStudent(DSA);
+      break;
+    case "B":
+      enrollStudent(PL);
+      break;
+    case "C":
+      enrollStudent(Networks);
+      break;
+    case "D":
+      console.log("DSA Students:");
+      console.log(DSA);
+      console.log("PL Students:");
+      console.log(PL);
+      console.log("Networks Students:");
+      console.log(Networks);
+      return;
+    default:
+      console.log("Invalid choice. Please try again.");
+  }
+}

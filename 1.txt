@@ -1,0 +1,9 @@
+const fullName = prompt("Enter your full name:");
+const age = prompt("Enter your age:");
+const favoriteNumber = prompt("Enter your favorite number:");
+const favoriteColor = prompt("Enter your favorite color:");
+
+console.log("Full Name:", fullName);
+console.log("Age:", age);
+console.log("Favorite Number:", favoriteNumber);
+console.log("Favorite Color:", favoriteColor);

@@ -1,0 +1,15 @@
+const age = prompt("Enter your age:");
+
+if (age < 5) {
+  console.log("You are a toddler.");
+} else if (age < 13) {
+  console.log("You are a child.");
+} else if (age < 20) {
+  console.log("You are a teenager.");
+} else if (age < 36) {
+  console.log("You are a young adult.");
+} else if (age < 61) {
+  console.log("You are middle-aged.");
+} else {
+  console.log("You are a senior.");
+}
